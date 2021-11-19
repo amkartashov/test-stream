@@ -1,0 +1,14 @@
+[package]
+name = "test-stream"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+async-stream = "0.3.2"
+async-trait = "0.1.51"
+bytes = "1.1.0"
+futures = "0.3.17"
+tokio = { version = "1.14", features = ["macros", "rt-multi-thread", "fs", "io-util"] }
+tokio-util = { version = "0.6.9", features = ["codec"] }
